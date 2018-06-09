@@ -1,0 +1,3 @@
+This simple react app.
+Basically it will just show a demo on how to create a button & gives a idea of how state,props work.
+The realtion ship b/w parent and child(passing props to child & back to parent).
