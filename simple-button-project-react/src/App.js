@@ -17,6 +17,8 @@ class App extends Component {
     <Button incrementValue={1} onClickFun={this.handleClickFun}/>
     <Button incrementValue={2} onClickFun={this.handleClickFun}/>
     <Button incrementValue={5} onClickFun={this.handleClickFun}/>
+    <Button incrementValue={100} onClickFun={this.handleClickFun}/>
+    <Button incrementValue={1000} onClickFun={this.handleClickFun}/>
     <Result counter={this.state.counter}/>
     </div>
   );

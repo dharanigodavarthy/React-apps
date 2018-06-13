@@ -5,7 +5,7 @@ body {
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.5;
     color: white;
     background-color: black
 }
@@ -39,6 +39,7 @@ li {
 .menu .menu-item-left {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .menu .menu-item-left li {
@@ -65,13 +66,12 @@ a {
 /*---------------about me section----*/
 
 .container-item-aboutme img{
-    width: 98%;
+    width: 100%;
     height: 350px;
 }
 .container-item-aboutme .my-self{
     width: 95%;
     text-align: center;
-    padding: 10px;
    
 }
 .container-item-aboutme .my-self button:hover{
@@ -79,22 +79,6 @@ a {
    color: white;
    cursor:pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*------------------first section--------*/
 
 .first {
@@ -179,12 +163,51 @@ text-decoration: underline;
     cursor: pointer;
     box-shadow: 1px 1px 4px 3px white;
 }
+.skills-block .boxes .box p{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+/* Resume section */
+
+/* Education & projects styless */
+.box1 >h1{
+    font-size: 25px;
+    text-align: center;
+}
+.box1 .boxes .title{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding: 10px;
+}
+.box1 .boxes .title i,h1{
+    margin: 15px;
+}
+.box1 .boxes .box{
+    width: 90%;
+    height: 280px;
+    margin: 15px auto;
+    background-color: darkgray;
+}
+.box1 .boxes .box p,h2,h3{
+    padding: 20px;
+    padding-bottom: 0;
+}
+.box1 .boxes .box p{
+    margin: 10px;
+}
+/* Footer section */
+
+.footer-container .footer-copyright {
+    text-align: center;
+    width: 100%
+}
 
 
 
 
-
-.container-item-contactme .formdata input,textarea{
+/* .container-item-contactme .formdata input,textarea{
     display: block;
     width: 100%;
     height: 300px;
@@ -193,7 +216,7 @@ text-decoration: underline;
 .container-item-contactme .formdata input,textarea{
     margin: 20px 10px;
     padding: 10px;
-}
+} */
 
 
 /*-----------------Media Query-----------*/
@@ -223,6 +246,7 @@ text-decoration: underline;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
         border-bottom: 2px solid white;
+        padding: 20px;
     }
 
     /* section: 4 */
@@ -236,16 +260,49 @@ text-decoration: underline;
     }
     .skills-block .boxes .box{
        border: 0;
-     
     }
+    .skills-block .boxes .box p{
+        padding: 40px;
+     }
     .container-item-project{
        border: 0;
     }
 
     .container-item-aboutme .my-self button{
        margin-top: 25px;
+
      }
 
+
+     /* Resume block */
+     .container-items{
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+     }
+     .container-items .title{
+        margin: 15px;
+     }
+     .container-items .title h1{
+        margin: 0;
+     }
+     .container-items .boxes .box{
+        height:320px;
+        padding: 10px;
+        justify-items: start;
+     }
+
+     /* footer section */
+     .footer-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-container .footer-copyright {
+        text-align: center;
+        border-top: 2px solid white;
+        width: 60%
+    }
 }
 
 
